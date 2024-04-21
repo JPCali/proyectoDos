@@ -26,67 +26,96 @@
   <!-- ESTE ES EL FONDO -->
   <body class="body d-grid container-fluid row">
     <!-- ESTA ES LA TV -->
-    <div class="tv container-fluid col-sm-6 col-lg-3 col-md-4">
-      <!-- SCREEN -->
-      <div class="screenTv col-sm-6 col-lg-3 col-md-4"></div>
+    <div class="container col-sm-6 col-lg-3 col-md-4">
+      <div class="tv container-fluid">
+        <!-- SCREEN -->
+        <div class="screenTv none col-sm-6 col-lg-3 col-md-4">
+          <div class="infoChannel">
+            <p class="nameChannel"></p>
+            <p class="currentTime"></p>
+          </div>
+          <img
+            class="channel"
+            src="./assets/MenuTv.png"
+            class="inicioOn col-sm-6 col-lg-3 col-md-4"
+          />
+        </div>
+      </div>
+      <!-- ESTE ES EL CONTROL REMOTO -->
+      <div class="remote text-white d-grid container-fluid">
+        <!-- PARTE SUPERIOR DEL CONTROL REMOTO -->
+        <div class="topRemote row">
+          <!-- TOPREMOTE -->
+          <div class="powerOnOff col-sm-6 col-lg-3 col-md-4">
+            <button onclick="onOffTv()" class="onOff text-white d-grid">
+              PWR
+            </button>
+          </div>
+          <button onclick="goHome()" class="homeBtn col-sm-6 col-lg-3 col-md-4">
+            home
+          </button>
+        </div>
+        <!-- PARTE MEDIA DEL CONTROL REMOTO -->
+        <div class="midRemote bg-white">
+          <!-- MIDREMOTE -->
+          <div class="vol row text-black">
+            <div class="volUp col-sm-6 col-lg-3 col-md-4">volup</div>
+            <div class="volDwn col-sm-6 col-lg-3 col-md-4">voldwn</div>
+          </div>
+          <div class="channel row text-black">
+            <button
+              onclick="channelUp()"
+              class="chUp col-sm-6 col-lg-3 col-md-4"
+            >
+              chup
+            </button>
+            <button
+              onclick="channelDown()"
+              class="chDwn col-sm-6 col-lg-3 col-md-4"
+            >
+              chdwn
+            </button>
+          </div>
+        </div>
+        <!-- PARTE INFERIOR DEL CONTROL REMOTO -->
+        <div class="bottomRemote row">
+          <!-- BOTTOMREMOTE -->
+          <div class="1 col-sm-6 col-lg-3 col-md-4">
+            <button class="button" onClick="getChanell(1)">1</button>
+          </div>
+          <div class="1 col-sm-6 col-lg-3 col-md-4">
+            <button class="button" onClick="getChanell(2)">2</button>
+          </div>
+          <div class="1 col-sm-6 col-lg-3 col-md-4">
+            <button class="button" onClick="getChanell(3)">3</button>
+          </div>
+          <div class="4 col-sm-6 col-lg-3 col-md-4"></div>
+          4
+          <div class="5 col-sm-6 col-lg-3 col-md-4"></div>
+          5
+          <div class="6 col-sm-6 col-lg-3 col-md-4"></div>
+          6
+          <!-- <div class="7 col-sm-6 col-lg-3 col-md-4"></div>
+              7
+              <div class="8 col-sm-6 col-lg-3 col-md-4"></div>
+              8
+              <div class="9 col-sm-6 col-lg-3 col-md-4"></div>
+              9
+              <div class="x col-sm-6 col-lg-3 col-md-4"></div>
+              x
+              <div class="0 col-sm-6 col-lg-3 col-md-4"></div>
+              0
+              <div class="y col-sm-6 col-lg-3 col-md-4"></div>
+              y -->
+        </div>
+      </div>
     </div>
-    <!-- ESTE ES EL CONTROL REMOTO -->
-    <div class="remote text-white d-grid container-fluid">
-      <!-- PARTE SUPERIOR DEL CONTROL REMOTO -->
-      <div class="topRemote row">
-        <!-- TOPREMOTE -->
-        <div class="powerOnOff col-sm-6 col-lg-3 col-md-4">
-          <div class="onOff d-grid"></div>
-        </div>
-        <div class="homeBtn col-sm-6 col-lg-3 col-md-4">home</div>
-      </div>
-      <!-- PARTE MEDIA DEL CONTROL REMOTO -->
-      <div class="midRemote bg-white">
-        <!-- MIDREMOTE -->
-        <div class="vol row text-black">
-          <div class="volUp col-sm-6 col-lg-3 col-md-4">volup</div>
-          <div class="volDwn col-sm-6 col-lg-3 col-md-4">voldwn</div>
-        </div>
-        <div class="channel row text-black">
-          <div class="chUp col-sm-6 col-lg-3 col-md-4">chup</div>
-          <div class="chDwn col-sm-6 col-lg-3 col-md-4">chdwn</div>
-        </div>
-      </div>
-      <!-- PARTE INFERIOR DEL CONTROL REMOTO -->
-      <div class="bottomRemote row">
-        <!-- BOTTOMREMOTE -->
-        <div class="1 col-sm-6 col-lg-3 col-md-4">
-          <button class="button" onclick="cambiarYoutube()">1</button>
-        </div>
-        1
-        <div class="2 col-sm-6 col-lg-3 col-md-4"></div>
-        2
-        <div class="3 col-sm-6 col-lg-3 col-md-4"></div>
-        3
-        <div class="4 col-sm-6 col-lg-3 col-md-4"></div>
-        4
-        <div class="5 col-sm-6 col-lg-3 col-md-4"></div>
-        5
-        <div class="6 col-sm-6 col-lg-3 col-md-4"></div>
-        6
-        <div class="7 col-sm-6 col-lg-3 col-md-4"></div>
-        7
-        <div class="8 col-sm-6 col-lg-3 col-md-4"></div>
-        8
-        <div class="9 col-sm-6 col-lg-3 col-md-4"></div>
-        9
-        <div class="x col-sm-6 col-lg-3 col-md-4"></div>
-        x
-        <div class="0 col-sm-6 col-lg-3 col-md-4"></div>
-        0
-        <div class="y col-sm-6 col-lg-3 col-md-4"></div>
-        y
-      </div>
-    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
