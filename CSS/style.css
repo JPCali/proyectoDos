@@ -1,20 +1,23 @@
 .body {
   width: 100vw;
   height: 100vh;
+}
+
+.container {
   display: grid;
+  width: 100%;
   grid-template-columns: 70% 30%;
-  margin: 1em;
-  padding: 1em;
+  padding: 20px;
 }
 
 .tv {
   background-color: black;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-content: space-between;
   height: 85%;
   width: 100%;
   border-radius: 2%;
-  padding: 10px;
+  padding: 5px;
 }
 .screenTv {
   background-color: rgb(47, 47, 57);
@@ -22,6 +25,27 @@
   height: 100%;
   width: 100%;
   border-radius: 2%;
+  object-fit: contain;
+  position: relative;
+}
+
+.screenTv img {
+  width: 100%;
+  height: 100%;
+}
+
+.infoChannel {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+}
+
+.screenTv.none {
+  display: none;
 }
 
 .remote {
@@ -39,26 +63,28 @@
   background-color: grey;
   border-radius: 50%;
   justify-content: space-around;
-}
-.powerOnOff {
-  background-color: rgb(198, 65, 65);
-  border-radius: 25%;
-  width: 3em;
-  height: 3em;
-}
-/* .onOff {
-  background-color: white;
   width: 100%;
   height: 100%;
+}
+
+.onOff {
+  background-color: rgb(190, 86, 86);
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
   align-content: space-around;
   margin: auto;
-} */
+}
 .homeBtn {
   background-color: rgb(56, 56, 161);
-  border-radius: 25%;
+  border-radius: 50%;
   width: 3em;
   height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
 }
 .midRemote {
   width: 100%;
@@ -85,4 +111,5 @@
   border-radius: 5%;
   row-gap: 10%;
   margin-inline: 1px;
+  border: 1px solid black;
 }
