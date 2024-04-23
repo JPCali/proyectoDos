@@ -88,3 +88,13 @@ const getChanell = (channel) => {
     nameChannel.textContent = selectedChannel.name;
   }
 };
+
+// const volUp = () => {
+//   currentChannelIndex = (currentChannelIndex + 1) % channels.length;
+//   cambiarImagen();
+// };
+
+// const volDwn = () => {
+//   currentChannelIndex = (currentChannelIndex + 1) % channels.length;
+//   cambiarImagen();
+// };

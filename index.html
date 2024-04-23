@@ -41,6 +41,7 @@
           />
         </div>
       </div>
+      <div class="spaceBetween"></div>
       <!-- ESTE ES EL CONTROL REMOTO -->
       <div class="remote text-white d-grid container-fluid">
         <!-- PARTE SUPERIOR DEL CONTROL REMOTO -->
@@ -59,54 +60,61 @@
         <div class="midRemote bg-white">
           <!-- MIDREMOTE -->
           <div class="vol row text-black">
-            <div class="volUp col-sm-6 col-lg-3 col-md-4">volup</div>
-            <div class="volDwn col-sm-6 col-lg-3 col-md-4">voldwn</div>
+            <button class="volUp col-sm-6 col-lg-3 col-md-4" onclick="volUp()">
+              VOL+
+            </button>
+
+            <button
+              class="volDwn col-sm-6 col-lg-3 col-md-4"
+              onclick="volDwn()"
+            >
+              VOL-
+            </button>
           </div>
           <div class="channel row text-black">
             <button
               onclick="channelUp()"
               class="chUp col-sm-6 col-lg-3 col-md-4"
             >
-              chup
+              CH +
             </button>
             <button
               onclick="channelDown()"
               class="chDwn col-sm-6 col-lg-3 col-md-4"
             >
-              chdwn
+              CH -
             </button>
           </div>
         </div>
         <!-- PARTE INFERIOR DEL CONTROL REMOTO -->
         <div class="bottomRemote row">
           <!-- BOTTOMREMOTE -->
-          <div class="1 col-sm-6 col-lg-3 col-md-4">
-            <button class="button" onClick="getChanell(1)">1</button>
+          <div class="topRow">
+            <div class="1 col-sm-6 col-lg-3 col-md-4">
+              <button class="button" onClick="getChanell(1)">
+                1<!-- <img src="./assets/buttonYt.png"/> -->
+              </button>
+            </div>
+            <div class="2 col-sm-6 col-lg-3 col-md-4">
+              <button class="button" onClick="getChanell(2)">2</button>
+            </div>
           </div>
-          <div class="1 col-sm-6 col-lg-3 col-md-4">
-            <button class="button" onClick="getChanell(2)">2</button>
+          <div class="midRow">
+            <div class="3 col-sm-6 col-lg-3 col-md-4">
+              <button class="button" onClick="getChanell(3)">3</button>
+            </div>
+            <div class="4 col-sm-6 col-lg-3 col-md-4">
+              <button class="button" onClick="getChanell(4)">4</button>
+            </div>
           </div>
-          <div class="1 col-sm-6 col-lg-3 col-md-4">
-            <button class="button" onClick="getChanell(3)">3</button>
+          <div class="bottomRow">
+            <div class="5 col-sm-6 col-lg-3 col-md-4">
+              <button class="button" onClick="getChanell(5)">5</button>
+            </div>
+            <div class="6 col-sm-6 col-lg-3 col-md-4">
+              <button class="button" onClick="getChanell(6)">6</button>
+            </div>
           </div>
-          <div class="4 col-sm-6 col-lg-3 col-md-4"></div>
-          4
-          <div class="5 col-sm-6 col-lg-3 col-md-4"></div>
-          5
-          <div class="6 col-sm-6 col-lg-3 col-md-4"></div>
-          6
-          <!-- <div class="7 col-sm-6 col-lg-3 col-md-4"></div>
-              7
-              <div class="8 col-sm-6 col-lg-3 col-md-4"></div>
-              8
-              <div class="9 col-sm-6 col-lg-3 col-md-4"></div>
-              9
-              <div class="x col-sm-6 col-lg-3 col-md-4"></div>
-              x
-              <div class="0 col-sm-6 col-lg-3 col-md-4"></div>
-              0
-              <div class="y col-sm-6 col-lg-3 col-md-4"></div>
-              y -->
         </div>
       </div>
     </div>
