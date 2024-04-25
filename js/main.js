@@ -3,6 +3,7 @@ const screenTv = document.querySelector(".screenTv");
 const homeBtn = document.querySelector(".homeBtn");
 const nameChannel = document.querySelector(".nameChannel");
 const currentTime = document.querySelector(".currentTime");
+const volume = document.querySelector("#volume");
 const imgHome = "../assets/MenuTv.png";
 let currentChannelIndex = 0;
 
@@ -89,12 +90,34 @@ const getChanell = (channel) => {
   }
 };
 
-// const volUp = () => {
-//   currentChannelIndex = (currentChannelIndex + 1) % channels.length;
-//   cambiarImagen();
-// };
+const hideInfoTv = () => {};
 
-// const volDwn = () => {
-//   currentChannelIndex = (currentChannelIndex + 1) % channels.length;
-//   cambiarImagen();
-// };
+let levelVol = 0;
+
+const volUp = () => {
+  const onTv = screenTv.classList.contains("none");
+  if (levelVol < 10 && !onTv) {
+    volume.style.display = "inline-block";
+    levelVol++;
+    volume.textContent = ` VOL ${levelVol.toString()}`;
+  }
+  if (!onTv) {
+    setTimeout(() => {
+      volume.style.display = "none";
+    }, 2000);
+  }
+};
+
+const volDwn = () => {
+  const onTv = screenTv.classList.contains("none");
+  if (levelVol > 0 && !onTv) {
+    volume.style.display = "inline-block";
+    levelVol--;
+    volume.textContent = ` VOL ${levelVol.toString()}`;
+  }
+  if (!onTv) {
+    setTimeout(() => {
+      volume.style.display = "none";
+    }, 2000);
+  }
+};
