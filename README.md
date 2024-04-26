@@ -43,12 +43,6 @@ La estuctura fue creada con HTML5:
 
   ![image](https://github.com/JPCali/proyectoDos/assets/161878420/edd5f85e-056c-4493-bbd9-a5a5fab13da4)
 
-  
-
-
-![image](https://github.com/JPCali/proyectoDos/assets/161878420/b242854b-679a-4872-9593-2c88ecf6c2b8)
-
- 
 
 
 
