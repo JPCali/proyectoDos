@@ -55,4 +55,4 @@ Para el desarrollo del proyecto se utilizarán las siguientes tecnologías:
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) : Para el diseño y la presentación visual de las páginas.
 
 - ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) : Se incluirán componentes de Bootstrap para agilizar el desarrollo y garantizar la consistencia en el diseño.
-- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) : Se implementa la funcionalidad
