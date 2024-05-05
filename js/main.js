@@ -5,6 +5,7 @@ const nameChannel = document.querySelector(".nameChannel");
 const currentTime = document.querySelector(".currentTime");
 const volume = document.querySelector("#volume");
 const imgHome = "../assets/MenuTv.png";
+
 let currentChannelIndex = 0;
 
 const channels = [
@@ -41,10 +42,10 @@ const channels = [
 ];
 
 const onOffTv = () => {
-  if (screenTv.classList.contains("none")) {
-    screenTv.classList.remove("none");
+  if (screenTv.style.display === "none") {
+    screenTv.style.display = "inline-block";
   } else {
-    screenTv.classList.add("none");
+    screenTv.style.display = "none";
   }
 };
 
